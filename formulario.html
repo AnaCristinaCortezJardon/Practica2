@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" media="screen" href="./styles.css">
+  <title>Formulario</title>
+  <!-- Agrego link de favicon -->
+  <link rel="icon" type="image/x-icon" href="http://example.com/favicon.ico" />
+  <!-- Agrego link de bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+</head>
+<body class="container">
+  <h1>Bienvenidos a mi fiesta</h1>
+  <h2>Por favor, confirmar asistencia:</h2>
+
+  <form class="formulario" id="form">
+    Nombre <input type="text" name="name" id="name">
+    <br>
+    Edad <input type="number" name="age" id="age">
+    <br>
+
+    Nacionalidad
+    <select name="nationality" id="nationality">
+      <option selected>Elige tu nacionalidad</option>
+      <option value="ar">Argentina</option>
+      <option value="mx">Mexicana</option>
+      <option value="per">Peruana</option>
+      <option value="vnzl">Venezolana</option>
+    </select>
+    <br>
+    <input type="submit" class="btnEnviar">
+  </form>
+
+  <div>
+    <h2 id="lista-de-invitados">Lista de invitados</h2>
+
+  </div>
+<!-- Eliminé un punto para vincularlo adecuadamente -->
+  <script src="./formulario.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+</body>
+
+</html>
